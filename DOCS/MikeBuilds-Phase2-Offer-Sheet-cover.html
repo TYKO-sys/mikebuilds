@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: 816px 1056px; margin: 0; }
+  html, body { margin: 0; padding: 0; width: 816px; height: 1056px;
+               background: #f7f7f6; }
+  .cover { width: 816px; height: 1056px; position: relative;
+           background: #f7f7f6;
+           font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+           border: none; outline: none; box-shadow: none; }
+  /* Layer 1: background grid, 2% opacity */
+  .bg-layer { position: absolute; inset: 0; overflow: hidden; z-index: 1;
+    background-image:
+      linear-gradient(to right, rgba(34,33,30,0.05) 0.5px, transparent 0.5px),
+      linear-gradient(to bottom, rgba(34,33,30,0.05) 0.5px, transparent 0.5px);
+    background-size: 50px 50px; }
+  /* Layer 2: ultra-thick vertical anchor line at 0.12W */
+  .vline { position: absolute; left: 98px; top: 106px; bottom: 106px;
+           width: 8px; background: #8e7423; z-index: 2; }
+  /* Layer 3: content, left edge 2U clear of the line */
+  .content { position: absolute; inset: 0; z-index: 3; }
+  .kicker { position: absolute; left: 158px; top: 158px;
+            font-size: 21px; font-weight: 500; letter-spacing: 4px;
+            text-transform: uppercase; color: #8e7423; opacity: 0.75; }
+  .hero { position: absolute; left: 158px; top: 300px;
+          font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+          font-weight: 800; font-size: 128px; line-height: 1.05;
+          color: #22211e; max-width: 590px; }
+  .summary { position: absolute; left: 158px; top: 620px;
+             font-size: 22px; line-height: 1.6; color: #22211e;
+             opacity: 0.85; max-width: 490px; }
+  .meta { position: absolute; left: 158px; top: 830px;
+          font-size: 24px; line-height: 1.5; color: #22211e;
+          font-weight: 500; }
+  .footer { position: absolute; left: 158px; top: 968px;
+            font-size: 16px; letter-spacing: 3px; text-transform: uppercase;
+            color: #8f8d86; opacity: 0.9; }
+  @media screen {
+    html { height: auto; display: flex; justify-content: center;
+           background: #f7f7f6; }
+    body { transform-origin: top center;
+           scale: min(1, calc(100vw / 816), calc(100vh / 1056));
+           margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,0.15); }
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="bg-layer"></div>
+  <div class="vline"></div>
+  <div class="content">
+    <div class="kicker">Phase 2 · Offer Sheet · 2026</div>
+    <div class="hero">MIKE<br>BUILDS</div>
+    <div class="summary">Three prices. Zero haggling. The complete offer menu for websites, automation, and care - every number quotable from a truck cab, built to stack $2,000 months in Baltimore trades.</div>
+    <div class="meta">Mike Mazique - Owner<br>(410) 575-4192 - Call or text<br>Baltimore, Maryland</div>
+    <div class="footer">Mikebuilds.tech · A human picks up</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    @page { size: 794px 1123px; margin: 0; }
+    :root {
+      --c-bg: #f1f0ef;
+      --c-accent: #87702a;
+      --c-text: #1c1c1a;
+      --c-muted: #78766f;
+      --c-mid: #504933;
+      --c-surface: #e8e7e4;
+    }
+    html, body {
+      margin: 0; padding: 0;
+      width: 794px; height: 1123px;
+      background: var(--c-bg);
+      font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    }
+    @media screen {
+      html { height: auto; display: flex; justify-content: center; min-height: 100vh; background: var(--c-bg); }
+      body { transform-origin: top center; scale: min(1, calc(100vw / 794), calc(100vh / 1123)); margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,0.18); }
+    }
+    .cover { width: 794px; height: 1123px; position: relative; background: var(--c-bg); border: none; outline: none; box-shadow: none; }
+
+    /* Layer 1 - background grid (clipped) */
+    .layer1 {
+      position: absolute; inset: 0; overflow: hidden; z-index: 1;
+      background-image:
+        linear-gradient(to right, rgba(80, 73, 51, 0.05) 0.5px, transparent 0.5px),
+        linear-gradient(to bottom, rgba(80, 73, 51, 0.05) 0.5px, transparent 0.5px);
+      background-size: 66px 66px;
+    }
+
+    /* Layer 2 - structure: thick vertical anchor line */
+    .layer2 { position: absolute; inset: 0; z-index: 2; }
+    .anchor-line {
+      position: absolute;
+      left: 95px; top: 112px; bottom: 112px;
+      width: 8px;
+      background: var(--c-accent);
+    }
+
+    /* Layer 3 - content */
+    .layer3 { position: absolute; inset: 0; z-index: 3; }
+
+    .kicker {
+      position: absolute; left: 163px; top: 168px;
+      font-size: 21px; font-weight: 400;
+      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--c-muted);
+    }
+    .hero-line {
+      position: absolute; left: 163px;
+      font-size: 72px; font-weight: 900; line-height: 1.0;
+      color: var(--c-text);
+      max-width: 560px;
+    }
+    .hero-1 { top: 296px; }
+    .hero-2 { top: 378px; color: var(--c-accent); }
+    .summary {
+      position: absolute; left: 163px; top: 560px;
+      max-width: 470px;
+      font-size: 22px; font-weight: 400; line-height: 1.6;
+      color: var(--c-text); opacity: 0.85;
+    }
+    .meta {
+      position: absolute; left: 163px; top: 800px;
+      max-width: 500px;
+    }
+    .meta .org {
+      font-size: 24px; font-weight: 500; color: var(--c-text);
+      margin-bottom: 14px;
+    }
+    .meta .contact {
+      font-size: 20px; font-weight: 400; color: var(--c-muted);
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="layer1"></div>
+    <div class="layer2">
+      <div class="anchor-line"></div>
+    </div>
+    <div class="layer3">
+      <div class="kicker">Traffic Kit &middot; The 30-Day Outreach Plan</div>
+      <div class="hero-line hero-1">MIKE</div>
+      <div class="hero-line hero-2">BUILDS</div>
+      <div class="summary">One porch, three doors, one phone number. This kit puts mikebuilds.tech in front of Baltimore trades and makes the phone ring at 410-575-4192. Thirty days, forty-five minutes a day, zero ad spend.</div>
+      <div class="meta">
+        <div class="org">Mike Builds &mdash; websites &amp; automation</div>
+        <div class="contact">mikebuilds.tech &nbsp;|&nbsp; 410-575-4192 &nbsp;|&nbsp; October 2026</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: 816px 1056px; margin: 0; }
+  :root {
+    --c-bg: #FAF6EF;        /* warm paper - never pure white */
+    --c-ink: #14161B;       /* site ink */
+    --c-muted: #5C5650;     /* warm gray, >= 6:1 on paper */
+    --c-amber: #C2570F;     /* burnt amber on LIGHT bg (print-safe) */
+    --c-amber-lite: #FFAD4D;/* light amber on DARK strip - same hue family */
+    --c-line: #D8CFC0;      /* hairline on paper */
+  }
+  html, body { margin: 0; padding: 0; background: var(--c-bg); }
+  * { box-sizing: border-box; }
+  .poster {
+    width: 816px; height: 1056px;
+    position: relative;
+    background: var(--c-bg);
+    color: var(--c-ink);
+    font-family: 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .pad { padding-left: 56px; padding-right: 56px; }
+
+  /* ── top block ─────────────────────────────────────── */
+  .head-row {
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    align-items: baseline; padding-top: 22px;
+  }
+  .kicker {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; font-size: 19px; line-height: 1.3; letter-spacing: 2.5px;
+    color: var(--c-amber); text-transform: uppercase;
+  }
+  .site-tag {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 17px; color: var(--c-muted); letter-spacing: 1px;
+  }
+  h1 {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800; font-size: 56px; line-height: 1.02;
+    margin: 10px 0 0 0; letter-spacing: 0.5px; color: var(--c-ink);
+  }
+  .sub {
+    font-size: 24px; line-height: 1.4; color: var(--c-muted);
+    margin: 8px 0 0 0; max-width: 700px; font-weight: 400;
+  }
+  .sub b { color: var(--c-ink); font-weight: 600; }
+
+  /* ── price ladder / parts list (pure typography) ────── */
+  .prices { margin-top: 14px; }
+  .price-row {
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    align-items: baseline; padding: 5px 0;
+    border-top: 1px solid var(--c-line); max-width: 100%;
+  }
+  .price-row:last-of-type { border-bottom: 1px solid var(--c-line); }
+  .price-label {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; font-size: 28px; line-height: 1.1; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--c-ink);
+  }
+  .price-label small {
+    display: block; font-family: 'Barlow', Arial, sans-serif;
+    font-weight: 400; font-size: 17px; line-height: 1.3; letter-spacing: 0;
+    text-transform: none; color: var(--c-muted); margin-top: 1px;
+  }
+  .price-num {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-weight: 600; font-size: 46px; line-height: 1.1;
+    color: var(--c-amber);
+    white-space: nowrap;
+    padding-right: 14px;   /* keep prices clear of the right trim zone */
+  }
+  .price-note {
+    font-size: 18px; color: var(--c-muted); margin-top: 6px;
+    line-height: 1.4;
+  }
+  .facts {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 17px; letter-spacing: 1px; color: var(--c-ink);
+    margin-top: 8px; line-height: 1.6;
+  }
+  .facts span { color: var(--c-amber); }
+
+  /* ── QR plate (container 1 of 3) ───────────────────── */
+  .qr-plate {
+    margin-top: 14px;
+    background: #FFFFFF;
+    border: 2px solid var(--c-ink);
+    padding: 20px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 28px;
+    max-width: 100%;
+  }
+  .qr-plate img { width: 160px; height: 160px; display: block; }
+  .qr-copy { flex: 1 1 300px; min-width: 260px; }
+  .qr-copy .big {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; font-size: 30px; line-height: 1.1;
+    text-transform: uppercase; color: var(--c-ink);
+  }
+  .qr-copy .url {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 21px; line-height: 1.2; color: var(--c-amber); margin-top: 10px;
+    font-weight: 600;
+  }
+  .qr-copy .alias {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 16px; color: var(--c-muted); margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  /* ── CTA strip (container 2 of 3), pinned to bottom ── */
+  .cta {
+    background: var(--c-ink);
+    color: #FAF6EF;
+    padding: 22px 56px 20px 56px;
+    display: flex; flex-wrap: wrap; align-items: center;
+    justify-content: space-between; gap: 24px;
+  }
+  .cta-copy .line1 {
+    font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700; font-size: 24px; line-height: 1.25; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--c-amber-lite);
+  }
+  .cta-copy .phone {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-weight: 600; font-size: 46px; line-height: 1.1; color: #FAF6EF;
+    margin-top: 6px; letter-spacing: 1px; white-space: nowrap;
+  }
+  .cta-copy .micro {
+    font-size: 16px; color: #B9B2A6; margin-top: 8px; letter-spacing: 1px;
+  }
+  .sms-plate {   /* container 3 of 3 */
+    background: #FFFFFF; padding: 10px;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .sms-plate img { width: 118px; height: 118px; display: block; }
+  .sms-plate .cap {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 16px; color: var(--c-ink); letter-spacing: 1px;
+    margin-top: 7px; font-weight: 500;
+  }
+
+  /* browser preview auto-scale (print unaffected) */
+  @media screen {
+    html { height: auto; display: flex; justify-content: center;
+           background: var(--c-bg); }
+    body { transform-origin: top center;
+           scale: min(1, calc(100vw / 816), calc(100vh / 1056));
+           margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,0.18); }
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="pad">
+    <div class="head-row">
+      <div class="kicker">For real estate agents — Baltimore</div>
+      <div class="site-tag">mikebuilds.tech</div>
+    </div>
+    <h1>One video a month.<br>Thirty days of posts.</h1>
+    <p class="sub">One long video becomes <b>captions, clips with timecodes, an article draft, quote cards, show notes</b>. Ready to post, every day.</p>
+  </div>
+
+  <div class="pad prices">
+    <div class="price-row"><div class="price-label">Starter<small>Two episodes a month</small></div><div class="price-num">$297<small style="display:inline;font-size:20px;color:var(--c-muted)">/mo</small></div></div><div class="price-row"><div class="price-label">Full pace<small>Four episodes a month</small></div><div class="price-num">$497<small style="display:inline;font-size:20px;color:var(--c-muted)">/mo</small></div></div>
+    <p class="price-note">Cancel anytime. The first pack comes with a walkthrough.</p>
+    <p class="facts">DONE FOR YOU <span>·</span> READY TO POST <span>·</span> CANCEL ANYTIME</p>
+  </div>
+
+  <div class="pad qr-wrap">
+    <div class="qr-plate">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAzQAAAM0CAIAAADiEPAgAAATiElEQVR4nO3YQW7lOBJAweFA978yZzNArxplm8bPx1LE/oMpkrIftPbe/wEAoOG/0wMAAPAPcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAg5Jke4NPWWtMj8Ad77x//dup8p2Y+WffEje/R2+7Viak7eeO6fMbUuzDFlzMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQp7pAW6y954e4RprrZF1p85o6nlv3OeTmafO923v/tue94S9+rqpv1c38uUMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgJBneoC3WGtNj/Bte+/pEb7tZJ9PnvdtezV1n6fOd2rdEzf+zXmbG8/oxr91N/LlDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAICQZ3oA+E177x//dq31i5N83cnMfMbUGd14J6dmhr+JL2cAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhDzTA8BvWmtNj/BtUzPvvX/825OZp9admnnK1Mw37hXU+HIGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQMgzPcBb7L2nR3iFqX1ea/34tyczn6x78tspN57viam7caMb/8beODOf4csZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHP9AA3WWtNj8AfnJzR3vsXJ+k7ed6pd+HG853a57etO+XGmenz5QwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAkGd6gE/be0+PQNRaa3qEj5p63pN1T97fqXXf5sZ9dr7U+HIGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQMgzPQBda62RdffeI7+det6TdW983qmZb1z3bd52vtb9zLo38uUMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgJC1956e4aPWWj/+7clenax7o6l7deP5vu1eve1uvM3b7uTU897494qv8+UMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgJBnegD+bO89PcK3rbV+/NuT5z357cnMJ6bWvXGvTkw97437/LZ3cMrb7uSN/8um+HIGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQMgzPcBN1lrXrbv3/sVJPrPu1D5P7dWUqXt1432+kTP6u934N5av8+UMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgJBnegD+bO/949+utX5xEv7N1D6f3I2T39L3tnf/bX8nT2b27vf5cgYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAyDM9wE323iPrrrVG1j0xtVdTTp735Hyn7saN78KNd3LqXp142xlNmbobN657I1/OAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAhZe+/pGV5hrfXj3954RifPO8U+f4Z9/oyTfb7x79XUzDeuO+XGd3+KL2cAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhDzTA3zaWuvHv917/+IkfVN79bYzOnneKTee743rTrnxPToxdUY33g0+w5czAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAizgAAQsQZAECIOAMACBFnAAAh4gwAIEScAQCEiDMAgBBxBgAQIs4AAELW3nt6hmustUbWPTmjqZlvdOO7cHK+U89748z0Td2rG/8vnHjb807x5QwAIEScAQCEiDMAgBBxBgAQIs4AAELEGQBAiDgDAAgRZwAAIeIMACBEnAEAhIgzAIAQcQYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAkGd6gE9ba/34t3vvkXWnnDzviam9mrobU268k1Mze/e/zhl93Y1/N27c5xv5cgYAECLOAABCxBkAQIg4AwAIEWcAACHiDAAgRJwBAISIMwCAEHEGABAi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" alt="QR code">
+      <div class="qr-copy">
+        <div class="big">Scan — see a sample pack</div>
+        <div class="url">mikebuilds.tech/realtor</div>
+        <div class="alias">Questions first? Email realtor-flyer@mikebuilds.tech</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="cta-copy">
+      <div class="line1">Call or text Mike — a human picks up.</div>
+      <div class="phone">(410) 575-4192</div>
+      <div class="micro">Mike Builds · Websites &amp; automation for trades · Baltimore, MD</div>
+    </div>
+    <div class="sms-plate">
+      <img src="data:image/png;base64,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" alt="Text Mike QR code">
+      <div class="cap">SCAN TO TEXT</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

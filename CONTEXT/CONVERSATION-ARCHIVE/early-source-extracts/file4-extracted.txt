@@ -1,0 +1,525 @@
+BUSINESS PLAN · LAUNCH EDITION
+
+Charm City
+Sites
+The factory is built. This plan picks up where
+the last one left off: what the machine now
+does on its own, the forty-five minutes that
+switch it on, and the forty-five days that turn it
+into $2,350.
+
+Prepared for the operator and family
+Baltimore, Maryland · September 2026
+
+Table of Contents
+1. What Changed Since the First Plan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+2. The Business in One Look . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+3. The Money Math . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+4. The Factory, As Built . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+5. What Is Left: The 45-Minute Ignition . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+6. The 45-Day Clock . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+7. A Day in the Life, Launch Edition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+8. Windows Now, MacBook Later . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+9. Risks: The Honest Ones That Remain . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+10. After the First $2,350 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+11. Where This Came From . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+Charm City Sites
+
+i
+
+Charm City Sites - Business Plan, Launch Edition
+
+1. What Changed Since the First Plan
+The first business plan was written when this whole thing was an idea on paper. It promised a machine
+that would build websites by itself, find its own customers, and cost nothing to run. It answered questions
+like what to build, who would do which part, and whether the math could possibly work. That was its job,
+and it did that job. This plan has a different job, because the situation has changed underneath it.
+The machine now exists. The whole factory arrived as a folder of sixty-one files: the website design, the
+scripts that turn a spreadsheet row into a finished site, five sets of automation instructions, installers for
+both a Mac and a Windows laptop, the setup walkthrough, and a finished example site that was built by
+the real tools, not by hand. Every item the first plan listed under "the assistant builds it" has been built,
+checked, and delivered. Nothing on that side of the ledger is still open.
+Two things changed that reshaped this plan. First, the original assumed the operator would wait for a new
+MacBook before anything started; instead, the factory was made to run on the Windows laptop that is
+here today, so the clock can start immediately. Second, the risk profile flipped. "Can it be built for free"
+is now an answered question. The only question left is the ordinary one every business faces: will people
+buy. Everything in the pages that follow is aimed at that question.
+
+2. The Business in One Look
+For anyone reading this fresh at the kitchen table, here is the whole idea in one breath. Charm City Sites
+builds finished websites for Baltimore's home-service trades before any money changes hands, shows the
+finished thing to the owner, and sells it the same day for a flat one-time price. Alongside it sits a second
+small product: a missed-call helper that texts back within seconds when the owner cannot answer the
+phone, so a ringing job never quietly dies. The first trade is plumbers, because the city's aging rowhomes
+guarantee a steady drip of burst pipes and flooded basements.
+The buyer is a plumber who is excellent at pipes and short on spare hours, whose customers check a
+screen before dialing, and who would rather look at a finished thing than imagine a proposal. The pitch is
+honest and short: "I built you a website, no strings. It is yours for five hundred dollars if you want it, live
+today." A neighbor handing over something real, with the plumber's own name already on it, gets replies
+that no remote stranger pitching "online presence" ever gets.
+
+Product
+
+What the client receives
+
+Price
+
+Spec website, built
+before payment
+
+Mobile-first site: tap-to-call button, services list,
+quote form with instant alerts, reviews section,
+search-ready details
+
+$500 first client, $650
+second, $800 third
+
+Charm City Sites
+
+1
+
+Charm City Sites - Business Plan, Launch Edition
+
+Product
+
+What the client receives
+
+Price
+
+Missed-call helper
+
+Automatic text-back within seconds on unanswered
+calls
+
+$400 setup
+
+Table 1: The two products and their prices
+
+There are still no monthly fees, no subscriptions, and no fine print. The sites live on free internet space,
+the text service runs on the client's own phone account, and every tool inside the factory costs exactly
+zero dollars. That was true when the first plan was written, and the entire build since then kept it true.
+
+3. The Money Math
+
+$2,350
+The whole target, unchanged - collected by Day 45 after ignition
+
+The math did not move, because it never needed to. Three websites at $500, $650, and $800 add up to
+$1,950. One missed-call helper at $400 brings the total to $2,350. "Collected" still means money actually
+in the account, not promises: each site is paid for at delivery, and the helper is paid at setup. No invoice
+chases and no net-30.
+
+What
+
+Amount
+
+When
+
+Website, first client
+
+$500
+
+Week 2 or 3 after ignition
+
+Website, second client
+
+$650
+
+Week 4
+
+Missed-call helper, sold to a happy client
+
+$400
+
+Two days after any sale, automatically
+offered
+
+Website, third client
+
+$800
+
+Weeks 5 and 6
+
+Total collected
+
+$2,350
+
+Day 45 or sooner
+
+Table 2: The collection ladder, anchored to ignition day
+
+The price still climbs on purpose. The first site sells at a friend price because there is no track record yet.
+By the third, there are two live examples and a testimonial, and $800 reads as a bargain next to a $2,000
+agency quote. What did change since the first plan is the cost side: it stayed at zero through the entire
+build. Every tool was verified free before it was used, and the factory was assembled without spending a
+dime, so there is nothing to earn back before the profit counts as profit.
+The condition attached to the math is the same one as before, and it is the real job: the daily outreach has
+to actually happen. Roughly ten short messages a day, about a hundred by the second week, is what turns
+
+Charm City Sites
+
+2
+
+Charm City Sites - Business Plan, Launch Edition
+
+three yeses from luck into arithmetic. The difference now is that the machine drafts and sends those
+messages on its own, which removes the last excuse for a quiet day.
+
+4. The Factory, As Built
+Here is what physically exists today: a single folder that turns a laptop into the factory. Unzip it,
+double-click one installer, and the machine assembles itself - the tools come in, the five workflows load,
+and everything wakes up with the computer from then on. No code gets written by hand at any point, on
+either a Mac or the Windows laptop.
+The product side is a finished website design that accepts new businesses the way a cookie cutter accepts
+new dough. Every site gets a big tap-to-call button, a plain services list, a quote form that alerts the
+owner's phone within a minute, a reviews section, the details search engines read, and one of four rotating
+color schemes so no two plumbers look identical. The writing is done by a free artificial-intelligence
+service: the builder reads each spreadsheet row, asks for every word the site needs, and falls back first to
+a second free service and then to a safe pre-written default, so the line never stalls. Anything the machine
+is unsure about gets flagged for a human read instead of guessed at.
+Around the product sit the five automation workflows that run the business itself. One watches the
+spreadsheet and turns every new row into a built, live website. One hunts for new plumbers across the
+map listings and the public licensing rolls, then enriches each lead with a phone number and email
+address. One writes and sends the daily outreach, with gentle follow-ups on day three and day seven, and
+stops politely when someone says no. One invoices closed deals on its own and offers the $400
+missed-call helper two days after any sale. The last one watches the contact forms and the reply inbox,
+and pushes hot leads to the operator's phone within a minute. A finished example site, built end-to-end by
+the real tools and inspected on both a desktop and a phone screen, is sitting in the folder ready to show a
+prospect today.
+
+When
+
+What happens on its own
+
+Every 2 minutes
+
+Any new lead row becomes a built and deployed website
+
+07:40 daily
+
+The lead hunter finds new Baltimore plumbers and queues them up
+
+09:00 daily
+
+Morning report on the phone: who to email, who replied, what broke
+
+09:11 daily
+
+Up to ten personalized outreach emails go out
+
+Every minute
+
+Form fills and email replies hit the phone instantly
+
+Every 30 minutes
+
+Closed deals get invoices, then the $400 upsell offer two days later
+Table 3: The machine's day, once the 45-minute ignition is done
+
+Charm City Sites
+
+3
+
+Charm City Sites - Business Plan, Launch Edition
+
+The build was not declared finished on faith. The workflow wiring was validated node by node,
+eighty-four checks with zero errors. The example site was produced by the actual generator, not a
+mock-up, and passed a visual inspection on large and small screens. When the whole kit was later
+re-packed for the Windows laptop, every file was re-checked again, thirty-three more checks, all clean.
+The machine that this plan asks the operator to trust is the same one that already proved itself in testing.
+
+5. What Is Left: The 45-Minute Ignition
+The factory is built but not yet switched on. Switching it on is the only real work left, and it is not
+technical work; it is account-connecting work, done once and never again. The total is about forty-five
+minutes of clicking, spread across four free accounts, following a page-by-page walkthrough that was
+written for exactly this moment.
+The steps are short. Five minutes to create the spreadsheet from two template files. Seven minutes to
+open a fresh outreach Gmail and generate its app password. Twenty minutes - the biggest chunk - to
+connect the control panel to Google, Telegram, and the mailbox. Five minutes for a free Cloudflare
+account and its token, which is what puts finished sites on the internet. Eight minutes to paste the AI
+brain's key and fill in one settings tab. Two of these are already on the operator's personal to-do list from
+the first plan - the Cloudflare account and the email credentials - and they simply live inside these
+forty-five minutes now.
+
+Task
+
+Who does it
+
+Status or time
+
+Site template, builder scripts, five workflows
+
+Assistant
+
+Done - delivered in the kit
+
+Example site, Mac installer, Windows installer
+
+Assistant
+
+Done - delivered in the kit
+
+Setup walkthrough, troubleshooting guide,
+dashboard
+
+Assistant
+
+Done - delivered in the kit
+
+Spreadsheet plus four free accounts
+
+Operator, click-by-click
+
+About 35 minutes, once
+
+Pasting keys and tokens into one settings file
+
+Operator
+
+About 10 minutes, once
+
+Answering calls, updating statuses, collecting
+money
+
+Operator
+
+Ongoing; this is the actual job
+
+Table 4: Division of labor, updated to today
+
+After those forty-five minutes, the machine runs the build, the hunt, the outreach, the invoices, and the
+upsell on its own schedule. What remains permanently human is exactly what the operator said they
+wanted to keep: greeting, listening, closing, and confirming the money landed.
+
+Charm City Sites
+
+4
+
+Charm City Sites - Business Plan, Launch Edition
+
+6. The 45-Day Clock
+Because the building phase is over, the clock no longer starts at "someday." It starts at ignition: the day
+the forty-five minutes of account-connecting are done and the first automated hunt runs. From that
+moment, the path to $2,350 is a schedule, not a hope.
+
+Days
+
+What happens
+
+Collected
+
+Days 1-7
+
+Ignition done; the machine hunts and builds on its own;
+roughly seventy outreach messages go out
+
+$0
+
+Days 8-14
+
+First yes expected; one finished site delivered and paid for at
+the friend price
+
+$500
+
+Days 15-28
+
+Follow-ups mature; volume passes a hundred touches; second
+yes lands; the machine offers the helper to the happy client
+
+$650 + $400
+
+Days 29-45
+
+Third yes, with live examples and a testimonial behind the
+pitch
+
+$800
+
+Day 45
+
+Total collected
+
+$2,350
+Table 5: The forty-five days, week by week
+
+The ladder has slack built in. If the first yes slips a week - and it might - the math still lands inside the
+window, because the outreach volume compounds on its own and does not depend on the operator finding
+spare hours. The machine keeps ten messages a day flowing whether week two goes well or goes quiet,
+which is precisely the point of having built it.
+One honest note belongs here: the week-by-week table is a plan, not a promise. The part that is a promise
+is the machinery: the touches go out, the follow-ups fire, the invoices generate, and the upsell gets
+offered, every single day, without anyone remembering to press anything. Selling stays a probability
+game; the factory's job is to keep the dice rolling without rest.
+
+7. A Day in the Life, Launch Edition
+Morning: the operator
+The day starts with the phone, and the phone already knows everything. The morning report lists today's
+ten touches, every due follow-up, and anything that needs attention - it arrived at 9:00 while the coffee
+was brewing. The outreach itself already went out at 9:11, written personally per plumber and sent
+without a single click. Mid-morning brings a call with a plumber who just watched a short phone video
+scrolling through a website bearing his own name; the conversation is short because the thing already
+exists, and the only live questions are "do you want it" and "how do you want to pay."
+
+Charm City Sites
+
+5
+
+Charm City Sites - Business Plan, Launch Edition
+
+Midday: one delivery and one update
+A sale closed yesterday gets handed over today: the site's contact form rerouted to the client's own inbox,
+done with one command. The outcome gets marked from the phone in a five-second message to the
+Telegram bot - "status 17, won" - and the machine takes it from there: the invoice generates on its own,
+and two days later the $400 missed-call helper will be offered to that same client without anyone
+remembering to bring it up. The afternoon holds one testimonial request and tomorrow's list, which the
+machine is already assembling.
+
+Evening: the client and the homeowner
+A plumber who bought in last week gets a ping: a homeowner submitted the quote form three minutes
+ago, while he was under a sink. A call he misses that evening gets an instant text back, and the caller
+books for tomorrow. The homeowner with the burst pipe never thinks about any of this; she meets a clean
+page that loads instantly, a name that matches the truck outside, and a button her thumb can find without
+reading. Three people, one machine, and everybody comes out ahead before dinner.
+
+8. Windows Now, MacBook Later
+The first plan assumed the factory would wait for a new MacBook. The reality is better: the Windows
+laptop on the desk today runs the entire machine, unchanged, because Windows carries a full Linux layer
+inside it and the factory lives in that layer. Double-clicking one installer file, and approving one
+administrator prompt, turns the whole thing on. If Windows asks to restart once to switch that layer on,
+that is a once-ever event, and no Linux password is ever typed - the installer quietly makes its own hidden
+working user.
+It also heals itself. Two invisible maintenance tasks were created alongside the install: one checks every
+five minutes that the factory's parts are alive and restarts anything that crashed, and it survives reboots,
+waking the machine within five minutes of login; the other runs the daily 7:40 lead hunt as a
+belt-and-suspenders backup. Closing the laptop overnight is fine - the heartbeat catches everything up
+when it opens again. A double-click dashboard file answers "what is up, what is down, and what to paste
+where" any time something looks wrong.
+
+The Mac instructions say
+
+On the Windows laptop instead
+
+Copy the AI brain's key from the menu-bar app
+
+Copy the key from a page that opens in the browser
+
+Edit the settings file in TextEdit
+
+Open the same file in Notepad through the Linux
+folder path
+
+A larger offline backup brain
+
+A smaller backup brain, sized for a laptop
+Table 6: The only three practical differences
+
+Charm City Sites
+
+6
+
+Charm City Sites - Business Plan, Launch Edition
+
+When the MacBook arrives, the move takes about fifteen minutes: copy the folder over, run the Mac
+installer, and paste the same secrets into the same settings file. Nothing actually migrates, because the
+spreadsheet, the Telegram bot, the Cloudflare account, and the Gmail all live in the cloud and never cared
+which laptop was asking. Until then, the phone remains the remote control for all of it - the commands
+work identically no matter which machine is humming at home.
+
+9. Risks: The Honest Ones That Remain
+The first plan carried a big honest risk: this machine had never been built, and free tools sometimes
+disappoint. That risk is retired - the factory exists, it was tested end to end, and it costs nothing to run.
+What remains are the ordinary risks of selling things to strangers, and each one comes with a patch
+already attached.
+• The first yes may be slow. If no plumber has said yes by around day fourteen, the machine's own
+records show which messages got opened and which got ignored, so the wording or the friend price
+can be adjusted with evidence instead of guesswork. The $500 entry price exists precisely to make
+the first yes easy.
+• Rejection volume is the tax, not the failure. Most people will say no or say nothing, and the plan is
+priced for that: a hundred touches containing three yeses is the machine working exactly as designed.
+Quiet weeks in the middle are expected; the calendar, not the mood, is the antidote.
+• Machine-written words can occasionally be off-key. Every site the builder is unsure about gets
+flagged for a human read, and a pre-written default sits underneath as a quality floor, so the worst
+case is a plain site, never a broken one.
+• Free tools can change their terms. The factory uses interchangeable parts behind one standard
+connection, so a swapped provider is an evening of adjustment, not a rebuild, and every account stays
+in the operator's own name.
+• The laptop is the factory floor. The self-healing keeps it running, a weekly backup habit means a
+stolen machine costs a day plus the fifteen-minute migration, and the phone keeps commanding
+everything in between.
+• Enthusiasm fades on hard weeks. The machine removes the excuse: the minimum viable day is
+answering what already rang, because the ten touches went out whether or not anyone felt inspired.
+The one failure with no patch is the same one the first plan named: sending nothing. Every other item on
+this list has a response bolted to it. The factory's deepest purpose is to make silence impossible on the
+outreach side, so that the only human job left is the one humans are actually good at - picking up the
+phone when it rings.
+
+Charm City Sites
+
+7
+
+Charm City Sites - Business Plan, Launch Edition
+
+10. After the First $2,350
+The forty-five-day clock ends with money in the account and three live storefronts on the internet
+carrying the Charm City Sites signature. The second act is repetition with variation: point the same
+factory at electricians, then heating-and-cooling shops, then roofers, one trade at a time. Nothing gets
+rebuilt; the machine simply gets new rows, and every lesson the spreadsheet records about which words,
+prices, and neighborhoods convert makes the next yes cheaper to earn than the last.
+Two quiet upgrades follow naturally, exactly as the first plan sketched them. A small monthly care plan,
+offered only to clients who ask, covers tiny edits and keeps phone numbers current, and even a handful of
+those turns lumpy income steadier. The missed-call helper grows into a fuller after-hours assistant that
+answers common questions and books jobs while the owner sleeps, which tradespeople pay for gladly
+because it works the hours they cannot.
+And the moat compounds on its own. The machine stays private, the lead sheet grows into a private
+record of what actually works in this city, the testimonials stack up faster than any copycat can fake them,
+and the name keeps being the same name. Growth, if it comes, arrives because demand pulls it, not
+because the operator pushes.
+
+11. Where This Came From
+Document
+
+Charm City Sites: Business Plan, Launch Edition
+
+Date written
+
+September 28, 2026
+
+Source
+
+zai-web conversation (bookmark it in the browser to reopen it without searching)
+
+Session ID
+
+web-e15a3a9a-9a75-4e64-b32c-a8d954bad4bf
+
+Chat ID
+
+478466ed-b8b6-467c-9097-f991c4dba44c
+
+The factory kit
+
+download/charm-city-sites/ - start with README.md, then OPERATIONS.md;
+WINDOWS.md covers the laptop track
+
+Example site
+
+Bayview Plumbing Co - a finished demo built by the real generator, in the kit's demo-site
+folder
+
+Login email
+
+____________________________ (write it in; only visible on the account holder's side)
+
+This plan was drafted with the same AI assistant, in the same working conversation that researched the
+tools, wrote the first plan, and then built the factory this plan describes. The identifiers below exist so that
+conversation can be found again without digging through twenty accounts; bookmarking it in the browser
+is the fastest route back, and this document is the durable record either way. It is meant to be shared
+freely with anyone the operator chooses to trust with it.
+
+Charm City Sites
+
+8
+
+
