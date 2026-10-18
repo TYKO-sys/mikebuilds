@@ -1,0 +1,368 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MIKE BUILDS — "The Night Garage" design system (v2)
+   Midnight base with a violet undertone, ambient color orbs,
+   one warm spark gradient (amber -> orange -> rose), glass
+   surfaces, and glow. Alive on load. Warm and readable in sun.
+   ============================================================ */
+
+@theme {
+  /* Base palette */
+  --color-ink: #0b0d14; /* midnight — page base, violet undertone */
+  --color-steel: #131722; /* raised dark surface */
+  --color-cream: #f2efe6; /* primary text on dark */
+
+  /* Light tokens — used only inside the demo phone (it demos
+     a customer's sunny, paper-bright site inside a dark page) */
+  --color-paper: #f4f1e8;
+  --color-bone: #fbf9f3;
+  --color-bodyink: #3a3f49;
+  --color-steelgray: #616b76;
+
+  /* Accents */
+  --color-hivis: #ff5a1f; /* safety orange — the brand spark */
+  --color-sparkamber: #ffc24a; /* gradient start */
+  --color-sparkrose: #ff3d68; /* gradient end */
+}
+
+@theme inline {
+  --font-display: var(--font-condensed), "Arial Narrow", sans-serif;
+  --font-body: var(--font-barlow), system-ui, sans-serif;
+  --font-mono: var(--font-plex), ui-monospace, monospace;
+}
+
+:root {
+  --ease-out-expo: cubic-bezier(0.21, 0.47, 0.32, 0.98);
+  --grad-spark: linear-gradient(
+    92deg,
+    #ffc24a 0%,
+    #ff5a1f 52%,
+    #ff3d68 100%
+  );
+  --grid-line: rgb(242 239 230 / 0.045);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-size: 1.0625rem; /* 17px mobile */
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem; /* 18px desktop */
+  }
+}
+
+::selection {
+  background: #ff5a1f;
+  color: #0b0d14;
+}
+
+/* Scrollbar — orange-tinted */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0d14;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgb(255 90 31 / 0.35);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255 90 31 / 0.55);
+}
+
+/* ---------- Type utilities ---------- */
+
+.display-hero {
+  font-family: var(--font-condensed), "Arial Narrow", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.95;
+}
+
+.display-line {
+  font-family: var(--font-condensed), "Arial Narrow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.mono-plate {
+  font-family: var(--font-plex), ui-monospace, monospace;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 768px) {
+  .mono-plate {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Gradient headline text — the spark */
+.text-spark {
+  background-image: var(--grad-spark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Ember gradient for big phone numbers — every stop >= 6:1 on ink,
+   so the one action that matters survives noon sun */
+.text-ember {
+  background-image: linear-gradient(92deg, #ffc24a 0%, #ff8a3d 55%, #ff5a1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Focus: hi-vis tape ---------- */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+details:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #ff5a1f;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- Ambient background system ---------- */
+
+/* Blueprint grid, radially masked so it dissolves */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Drifting color orbs — the page breathes */
+@keyframes orb-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(24px, -32px, 0) scale(1.06);
+  }
+  66% {
+    transform: translate3d(-20px, 18px, 0) scale(0.96);
+  }
+}
+
+.animate-orb {
+  animation: orb-drift 14s ease-in-out infinite;
+}
+
+.animate-orb-slow {
+  animation: orb-drift 22s ease-in-out infinite reverse;
+}
+
+/* ---------- Glass surfaces ---------- */
+
+.glass {
+  background: rgb(255 255 255 / 0.04);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-hover {
+  transition:
+    transform 200ms var(--ease-out-expo),
+    border-color 200ms var(--ease-out-expo),
+    background-color 200ms var(--ease-out-expo),
+    box-shadow 200ms var(--ease-out-expo);
+}
+
+.glass-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgb(255 90 31 / 0.45);
+  background: rgb(255 255 255 / 0.06);
+  box-shadow: 0 12px 40px -16px rgb(255 90 31 / 0.3);
+}
+
+/* ---------- CTA glow ---------- */
+
+/* Gradient CTA fill — hi-vis tape, lit from inside */
+.cta-spark {
+  background-image: linear-gradient(92deg, #ffc24a 0%, #ff5a1f 58%, #ff6a3d 100%);
+  box-shadow: 0 0 44px -12px rgb(255 90 31 / 0.55);
+  transition:
+    box-shadow 200ms var(--ease-out-expo),
+    transform 150ms var(--ease-out-expo),
+    filter 150ms var(--ease-out-expo);
+}
+
+.cta-spark:hover {
+  box-shadow: 0 0 60px -10px rgb(255 90 31 / 0.75);
+}
+
+.cta-spark:active {
+  transform: translateY(1px);
+  filter: brightness(0.94);
+}
+
+/* Breathing glow on the big phone plates */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 44px -14px rgb(255 90 31 / 0.45);
+  }
+  50% {
+    box-shadow: 0 0 68px -10px rgb(255 90 31 / 0.65);
+  }
+}
+
+.glow-breathe {
+  animation: glow-pulse 4.5s ease-in-out infinite;
+}
+
+/* Shimmer sweep across gradient buttons on hover */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+.shimmer-sweep {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.shimmer-sweep::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgb(255 255 255 / 0.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+}
+
+.group:hover .shimmer-sweep::after {
+  animation: shimmer 900ms ease-in-out;
+}
+
+/* ---------- Ticker marquee ---------- */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 36s linear infinite;
+}
+
+/* ---------- Demo phone auto-scroll (unchanged — the proof) ---------- */
+
+@keyframes demo-scroll {
+  0%,
+  8% {
+    transform: translateY(0);
+  }
+  82%,
+  100% {
+    transform: translateY(-63%);
+  }
+}
+
+.demo-track {
+  animation: demo-scroll 14s ease-in-out 1.5s infinite alternate;
+}
+
+/* ---------- Fan-out tiles ---------- */
+
+@keyframes fan-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Gradient underline draw (section headings) ---------- */
+
+@keyframes underline-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.spark-under::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--grad-spark);
+  margin-top: 16px;
+  transform-origin: left center;
+  animation: underline-draw 380ms var(--ease-out-expo) 120ms both;
+}
+
+/* ---------- Reduced motion: everything off ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-orb,
+  .animate-orb-slow,
+  .glow-breathe,
+  .marquee-track,
+  .demo-track,
+  .fan-tile,
+  .shimmer-sweep::after,
+  .spark-under::after {
+    animation: none !important;
+  }
+  .spark-under::after {
+    transform: scaleX(1);
+  }
+  .cta-spark,
+  .glass-hover {
+    transition: none !important;
+  }
+}
